@@ -56,11 +56,11 @@ with open(path, newline='') as bud_raw:
 
 #write all the findings in a text file
 pb_text = open("PyBank-output.txt", "w")
-    pb_text.write('Financial Analysis \n----------------------------')
-    pb_text.write('\nTotal Months: ' + str(month_count))
-    pb_text.write('\nTotal: $' + str(pl_sum))
-    pb_text.write('\nAverage Change: $' + str(pl_avg_change))
-    pb_text.write('\nGreatest Increase in Profits: ' + change_zip[max_change] + ' ($' + str(max_change) + ')')
-    pb_text.write('\nGreatest Decrease in Profits: ' + change_zip[min_change] + ' ($' + str(min_change) + ')')
-    pb_text.close()
+pb_text.write('Financial Analysis \n----------------------------')
+pb_text.write('\nTotal Months: ' + str(month_count))
+pb_text.write('\nTotal: $' + str(pl_sum))
+pb_text.write('\nAverage Change: $' + str(pl_avg_change))
+pb_text.write('\nGreatest Increase in Profits: ' + change_zip[max_change] + ' ($' + str(max_change) + ')')
+pb_text.write('\nGreatest Decrease in Profits: ' + change_zip[min_change] + ' ($' + str(min_change) + ')')
+pb_text.close()
 
