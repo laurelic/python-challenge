@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[8]:
-
-
 #challenge: to parse and analyze a csv using only built-in python functions (no pandas)
 
 #import the csv and os dependencies
@@ -59,10 +53,6 @@ with open(path, newline='') as bud_raw:
     print('Average Change: $' + str(pl_avg_change))
     print('Greatest Increase in Profits: ' + change_zip[max_change] + ' ($' + str(max_change) + ')')
     print('Greatest Decrease in Profits: ' + change_zip[min_change] + ' ($' + str(min_change) + ')')
-
-
-# In[9]:
-
 
 #write all the findings in a text file
 pb_text = open("PyBank-output.txt", "w")
